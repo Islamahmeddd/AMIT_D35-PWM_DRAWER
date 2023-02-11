@@ -25,7 +25,7 @@ int main(void)
     u32_t freq;
     mdio_setPinStatus(PORTD, PIN7, OUTPUT);//OC2 Timer 2
     mdio_setPinStatus(PORTD, PIN6, INPUT_FLOAT);//Input Capture pin ICP1
-    mtimer_init(TIMER_CHANNEL_2, TIMER_PWM_MODE, TIMER_FREQ_3_9_KHZ); //Initialize timer2 with mode PWm and freq 
+    mtimer_init(TIMER_CHANNEL_2, TIMER_PWM_MODE, TIMER_FREQ_7_8_KHZ); //Initialize timer2 with mode PWm and freq 
     mtimer_init(TIMER_CHANNEL_1, TIMER_ICU_MODE, TIMER_ICU_PRESCALER);//Initialize timer1 with input capture Unit Mode and prescaler
     hlcd_init();//Initialize LCD
     mtimer_startPWM_signal(TIMER_CHANNEL_2);//Start PWM
